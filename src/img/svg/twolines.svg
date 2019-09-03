@@ -1,0 +1,19 @@
+<svg id="twolines.svg" xmlns="http://www.w3.org/2000/svg" width="44.844" height="129" viewBox="0 0 44.844 129">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffae00;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #0cf;
+      }
+    </style>
+  </defs>
+  <path id="Shape_2_copy_4" data-name="Shape 2 copy 4" class="cls-1" d="M606.969,3994h1.871l-42.969,119H564Z" transform="translate(-564 -3984)"/>
+  <path id="Shape_2_copy_5" data-name="Shape 2 copy 5" class="cls-2" d="M606.969,3984h1L565,4103h-1Z" transform="translate(-564 -3984)"/>
+</svg>
