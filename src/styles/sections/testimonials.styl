@@ -1,0 +1,112 @@
+.testimonials
+    padding 82px 0 192px 0
+
+.testimonials-top
+    display flex
+    margin-bottom 130px
+
+.testimonials-top-lines
+    margin 0 32px 0 0
+
+.testimonials-top-description
+    max-width 538px
+    align-self flex-end
+    transform translateY(-20px)
+    line-height 1.25
+    color #666
+
+.testimonials-technologies
+    display flex
+    justify-content space-around
+    align-items center
+    margin 0 0 53px 0
+
+.testimonials-clients
+    display flex
+    justify-content space-between
+    margin 0 0 75px 0
+
+.testimonials-clients-box
+    width 300px
+    height 202px
+    border solid 1px #efefef
+    background-color #f7f7f7
+    padding 20px 13px 0 11px
+
+    q
+        display block
+        margin 0 0 43px 0
+        font-style italic
+        line-height 1.25
+        color #999
+
+.testimonials-clients-box-client
+    display flex
+    align-items center
+    position relative
+    padding 16px 0 0 0
+
+    &::before
+        position: absolute
+        top 0
+        content ''
+        display block
+        width 274px
+        height 2px
+        background-color #999
+
+.testimonials-clients-box-client-img
+    width 44px
+    height 44px
+    margin 0 13px 0 0
+
+    img 
+        width 100%
+        height auto
+
+.testimonials-clients-box-client-info
+    padding 8px 0 8px 0
+
+    p
+        font-size(12px)
+        line-height 1
+        color #999
+
+.testimonials-clients-box-client-info__name
+    display block
+    margin-bottom 4px
+    font-size(14px)
+    font-weight bold
+    text-decoration none
+    line-height 1
+    color #09f
+    transition 0.3s ease-in
+
+    &:hover
+        color #0cf
+
+.testimonials-dots
+    display flex
+    justify-content center
+
+.testimonials-dots__dot
+    width 11px
+    height 11px
+    border none
+    border-radius 50%
+    background-color #cccccc
+    cursor pointer
+    transition 0.5s ease-in-out
+    margin 0 5px 0 0
+
+    &:last-child
+        margin 0
+    
+    &:focus
+        outline none 
+
+    &:hover
+        background-color #999
+
+.testimonials-dots__dot--active
+    background-color #999
