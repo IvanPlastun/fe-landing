@@ -1,1 +1,3 @@
-// Импорт js-модулей
+import initMap from "./map/Map"
+
+initMap()
