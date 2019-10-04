@@ -1,7 +1,11 @@
 extends ../layouts/page-layout/page.pug
 block variables
-    - const title = 'Главная страница'
+    - const title = 'Fe'
 
 block content
     main(role="main")
+        include ../sections/header.pug
         include ../sections/about.pug
+
+block scripts
+    script(src="js/main.js")
