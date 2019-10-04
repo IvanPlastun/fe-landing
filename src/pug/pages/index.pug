@@ -3,8 +3,9 @@ block variables
     - const title = 'Fe'
 
 block content
-    include ../sections/header.pug
+    main(role="main")
+        include ../sections/header.pug
+        include ../sections/about.pug
 
 block scripts
     script(src="js/main.js")
-    
