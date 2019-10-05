@@ -1,0 +1,124 @@
+.service
+    padding: 117px 0 167px 0
+
+.service-top
+    display flex
+    margin-bottom 37px
+
+.service-top-lines
+    margin 0 31px 0 57px
+
+.service-top-description
+    align-self flex-end
+    transform translateY(-30px)
+    max-width 539px
+    line-height 1.25
+    color #666
+
+.service-box
+    display flex
+    flex-flow row wrap
+
+.service-box-item
+    display flex
+    padding 30px 30px 48px 0
+    position relative
+
+    &:nth-child(2n)
+        padding-left 30px
+
+    &:nth-child(2n-1)
+        padding-left 15px
+
+    &:nth-child(1)::before
+        position absolute
+        top 0
+        right 0
+        content ''
+        display block
+        height 164px
+        width 2px
+        background-color #eaeaea
+
+    &:nth-child(1)::after
+        position absolute
+        left 0
+        bottom 0
+        content ''
+        display block
+        height 2px
+        width: 453px
+        background-color #eaeaea
+
+    &:nth-child(3)::before
+        position absolute
+        top 8px
+        right 0
+        content ''
+        display block
+        height 164px
+        width 2px
+        background-color #eaeaea
+
+    &:nth-child(5)::before
+        position absolute
+        top 8px
+        right 0
+        content ''
+        display block
+        height 164px
+        width 2px
+        background-color #eaeaea
+
+    &:nth-child(3)::after
+        position absolute
+        left 0
+        bottom 0
+        content ''
+        display block
+        height 2px
+        width: 453px
+        background-color #eaeaea
+    
+    &:nth-child(2)::after
+        position absolute
+        left 10px
+        bottom 0
+        content ''
+        display block
+        height 2px
+        width: 465px
+        background-color #eaeaea
+
+    &:nth-child(4)::after
+        position absolute
+        left 10px
+        bottom 0
+        content ''
+        display block
+        height 2px
+        width: 465px
+        background-color #eaeaea
+
+.service-box-item-icon
+    display flex
+    justify-content center
+    align-items center
+    width 107px
+    height 105px
+    background-color #00ccff
+    transform skew(-15deg)
+    margin-right 30px
+    font-size(69px)
+    line-height 1
+    text-align center
+    color #fff
+
+.service-box-item-description
+    max-width 285px
+    color #999
+
+    &--title-styles
+        margin 9px 0 12px 0
+        color #ff9900
+
