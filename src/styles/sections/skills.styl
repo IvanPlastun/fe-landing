@@ -1,0 +1,105 @@
+.skills
+    padding 40px 0 60px 0
+    background-color #f7f7f7
+
+    @media(min-width: 768px)
+        padding: 80px 0 100px 0
+
+    @media(min-width: 992px)
+        padding 120px 0 142px 0
+
+.skills-description
+    max-width 538px
+    margin 0 auto 60px auto
+
+    @media(min-width: 768px)
+        margin 0 auto 109px auto
+
+    &--title-indents
+        margin-bottom 35px
+
+        @media(min-width: 768px)
+            margin-bottom 49px
+    p
+        line-height 1.25
+        text-align center
+        color #666
+
+.skills-indicators
+    display flex
+    flex-direction column
+    align-items center
+
+    @media(min-width: 576px)
+        flex-direction row
+        flex-wrap wrap
+        align-items flex-start
+        justify-content space-between
+
+    @media(min-width: 768px)
+        justify-content center
+
+    @media(min-width: 992px)
+        justify-content space-between
+
+.skills-indicators-indicator
+    width 230px
+    display flex
+    flex-direction column
+    align-items center
+    margin-bottom 45px
+
+    &:last-child
+        margin-bottom 0
+
+    @media(min-width: 576px)
+        &:nth-last-child(-n+2)
+            margin-bottom 0
+
+    @media(min-width: 768px)
+        &:nth-child(2n - 1)
+            margin-right 40px
+
+    @media(min-width: 992px)
+        margin-bottom 0
+
+        &:nth-child(2n - 1)
+            margin-right 0
+    p
+        text-align center
+        color #999999
+
+.skills-indicators-indicator-wrapper
+    position relative
+    margin-bottom 20px
+
+    span 
+        position absolute
+        left 53px
+        top 65px
+        transform translate(0px, 0px)
+        font-size(30px)
+        font-weight bold
+        color #333333
+
+.skills-indicators-indicator-svg-box
+    width 160px
+    height 160px
+
+.skills-indicators-indicator-svg-box__circle-outer
+    fill transparent
+    stroke #eaeaea
+    stroke-width 15px
+
+.skills-indicators-indicator-svg-box__circle-inner
+    fill transparent
+    stroke #00ccff
+    stroke-width 15px
+    stroke-dasharray 573.34px
+    transform-origin center center
+    transform rotate(-60deg)
+
+.skills-indicators-indicator--additional-styles
+    margin-bottom 14px
+    text-align center
+    text-transform uppercase
