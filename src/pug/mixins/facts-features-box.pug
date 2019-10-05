@@ -1,0 +1,8 @@
+- const achievements = [{iconClass: "far fa-thumbs-up", title: "In Business", number: 2006}, {iconClass: "fas fa-comments", title: "Clients Served", number: 240}, {iconClass: "far fa-smile", title: "Projects Delivered", number: 120}, {iconClass: "far fa-bookmark", title: "Awards Won", number: 10}] 
+
+mixin factsFeatureBox(facts)
+    for fact in facts
+        section.facts-features-box
+            .facts-features-box__icon #[i(class=fact.iconClass)]
+            .facts-features-box__title #{fact.title}
+            .facts-features-box__number #{fact.number}

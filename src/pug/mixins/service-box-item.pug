@@ -1,0 +1,10 @@
+- const servicesInfo = [{iconclass: "fab fa-stumbleupon", title: "Brand Identity", description: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis."}, {iconclass: "far fa-lightbulb", title: "UI/UX Design", description: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis."}, {iconclass: "fas fa-flag-checkered", title: "Graphic Design", description: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis."}, {iconclass: "far fa-file-code", title: "Mobile Application", description: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis."}, {iconclass: "far fa-image", title: "Illustration", description: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis."}, {iconclass: "fas fa-video", title: "Videography", description: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis."}]
+
+mixin serviceBoxItem(serviceInfo)
+    for info in serviceInfo
+        .service-box-item
+            .service-box-item-icon
+                i(class=info.iconclass)
+            .service-box-item-description
+                h5.title-h5.service-box-item-description--title-styles #{info.title}
+                p #{info.description}
