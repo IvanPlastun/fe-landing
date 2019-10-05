@@ -1,0 +1,12 @@
+- const worksData = [{imgPath: "../img/works/work-1.jpg", altText: "work1", title: "Outfield", description: "Mobile interaction CRM for field reps", classPosition: "portfolio-box-item--position-1"}, {imgPath: "../img/works/work-2.jpg", altText: "work2", title: "Outfield", description: "Mobile interaction CRM for field reps", classPosition: "portfolio-box-item--position-2"}, {imgPath: "../img/works/work-3.jpg", altText: "work3", title: "Outfield", description: "Mobile interaction CRM for field reps", classPosition: "portfolio-box-item--position-3"}, {imgPath: "../img/works/work-4.jpg", altText: "work4", title: "Outfield", description: "Mobile interaction CRM for field reps", classPosition: "portfolio-box-item--position-4"}, {imgPath: "../img/works/work-5.jpg", altText: "work5", title: "Outfield", description: "Mobile interaction CRM for field reps", classPosition: "portfolio-box-item--position-5"}, {imgPath: "../img/works/work-6.jpg", altText: "work6", title: "Outfield", description: "Mobile interaction CRM for field reps", classPosition: "portfolio-box-item--position-6"}]
+
+mixin portfolioBoxItem(data)
+    for workData in data
+        section.portfolio-box-item(class=workData.classPosition)
+            .portfolio-box-item-img
+                img(src=workData.imgPath, alt=workData.altText)
+                .portfolio-box-item-img-overlay
+                    button.portfolio-box-item-img-overlay__button #[i.fas.fa-search]
+                    a(href="#!").portfolio-box-item-img-overlay__link #[i.fas.fa-link]
+            h6.portfolio-box-item__title #{workData.title}
+            p #{workData.description}
