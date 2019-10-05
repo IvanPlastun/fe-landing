@@ -1,0 +1,12 @@
+- const testimonalsCliensData = [{clientName: "@Someone famous", tistimony: "ornare pede montes, morbi urna sed temporibus non, nibh inceptos enim turpis natoque", img: {src: "../img/team/client.jpg", alt: ""}, clientName: "@Someone famous"}]
+
+mixin testimonialsClientBox(dataClient)
+    for clientData in dataClient
+        section.testimonials-clients-box
+            q #{clientData.tistimony}
+            section.testimonials-clients-box-client
+                section.testimonials-clients-box-client-img
+                    img(src=clientData.img.src, alt=clientData.img.alt)
+                section.testimonials-clients-box-client-info
+                    a.testimonials-clients-box-client-info__name(href="#!") #{clientData.clientName}
+                    p #{clientData.clientName}

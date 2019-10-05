@@ -1,3 +1,69 @@
-h1, h2, h3, h4, h5, h6, ul
+*
+    box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p, ul
     margin 0
     padding 0
+
+body 
+    font-family 'Lato', sans-serif
+
+.container
+    width 100%
+    padding-left 15px
+    padding-right 15px
+    margin 0 auto
+
+    @media(min-width: 576px) 
+        max-width 540px
+        // padding 0
+
+    @media(min-width: 768px)
+        max-width 720px
+        // padding 0
+
+    @media(min-width: 992px)
+        max-width 960px
+        padding-left 0
+        padding-right 0
+
+
+.title-h5
+    font-size(16px)
+    font-weight bold
+    color #333
+
+    @media(min-width: 576px)
+        font-size(20px)
+
+.title-h5--indents
+    margin-bottom 10px
+
+    @media(min-width: 576px)
+        margin-bottom 15px
+
+.title-h3--settings
+    text-align center
+    flex-shrink 0
+
+    @media(min-width: 768px)
+        text-align left
+
+    @media(min-width: 992px)
+        flex-shrink 1
+
+.title-h3
+    font-size(30px)
+    font-weight 900
+    color #00ccff
+    text-transform uppercase
+
+.title-h3__subtitle
+    display block
+    font-size(18px)
+    color #666666
+    font-weight normal
+    text-transform capitalize
+
+.title-h3--orange
+    color #ff9900
