@@ -1,0 +1,22 @@
+section.portfolio
+    section.container
+        h4.title-h4.portfolio-title Additional Recent Work
+        p.portfolio-subtitle Market-proven software with award winning design
+        div.portfolio-filter
+            button.portfolio-filter__select-category.portfolio-filter__select-category--active All
+            button.portfolio-filter__select-category Website
+            button.portfolio-filter__select-category Graphic
+            button.portfolio-filter__select-category Identity
+            button.portfolio-filter__select-category Mobile Apps
+        section.portfolio-box
+            +portfolioBoxItem(worksData)(class=workBoxPositionClasses)
+            //- section.portfolio-box-item
+            //-     .portfolio-box-item-img
+            //-         .portfolio-box-item-img-overlay
+            //-                 button.portfolio-box-item-img-overlay__button #[i.fas.fa-search]
+            //-                 a(href="#!").portfolio-box-item-img-overlay__link #[i.fas.fa-link]
+            //-         img(src="../img/works/work-1.jpg", alt="work1")
+            //-     h6.portfolio-box-item__title Outfield
+                p Mobile interaction CRM for field reps
+        .portfolio-button-wrapper
+            button.portfolio-button-load Load more
