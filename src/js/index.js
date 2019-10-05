@@ -1,4 +1,7 @@
-// Импорт js-модулей
+import initMap from "./map/Map"
+
+initMap()
+
 const burgerMenu = document.querySelector('#burger-menu')
 
 function activeMenu () {
@@ -16,3 +19,4 @@ function activeMenu () {
 }
 
 burgerMenu.addEventListener('click', activeMenu)
+
