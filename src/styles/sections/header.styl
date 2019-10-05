@@ -1,0 +1,200 @@
+.header
+    position relative
+    height 794px
+    background-image url(../img/background/background.png), radial-gradient(#fff 1px, transparent 1px)
+    background-size cover, 5px 5px
+    background-blend-mode lighten
+    background-position center
+
+    &-top
+        display flex
+        justify-content space-between
+        padding-top 28px
+    &-nav
+        position: relative;
+
+    @media(min-width: 768px)
+        height 1032px
+
+.header-nav-burger
+    display block
+    position: absolute;
+    right: 0;
+    width 50px
+    height 50px
+    padding-top 11px
+    cursor pointer
+    z-index: 10;
+
+    @media(min-width: 768px)
+        display none
+
+    &__line
+        display block
+        width 80%
+        height 2px
+        background-color #fff
+        margin 0 auto
+        transition 0.5s ease-in-out
+
+        &--middle
+            margin-top 11px 
+            margin-bottom 11px
+
+.header-nav-burger__line--top-active
+    transform translateY(13px) rotate(45deg)
+
+.header-nav-burger__line--middle-active
+    transform rotate(-45deg)
+
+.header-nav-burger__line--bottom-active
+    display none
+
+.header-triangle
+    position absolute
+    width 100%
+    height 84px
+    bottom -1px
+
+    @media(min-width: 576px)
+        height 104px
+
+    @media (min-width: 768px)
+        height 168px
+
+.header-nav-list
+    display: none
+    list-style-type none
+    width 100%
+
+    @media(min-width: 768px)
+        display: flex
+
+.header-nav-list-item
+    text-align center
+    margin-bottom 25px
+    animation fadeInRight 0.5s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards
+    animation-delay 0.5s
+
+    &:nth-child(2)
+        animation-delay 0.6s
+
+    &:nth-child(3)
+        animation-delay 0.7s
+
+    &:nth-child(4)
+        animation-delay 0.8s
+
+    &:nth-child(5)
+        animation-delay 0.9s
+
+    @media(min-width: 768px)
+        text-align left
+        margin-right 40px
+        margin-bottom 0
+        animation none
+        animation-delay 0s
+
+    &:last-child
+        margin-bottom 0
+
+        @media(min-width: 768px)
+            margin-right 0
+
+.header-nav-list-item__link
+    text-decoration none
+    color #fff
+    transition: 0.4s ease-in
+    font-size(30px)
+
+    @media(min-width: 768px)
+        font-size(16px)
+
+    &:hover 
+        color #ffae00
+
+.header-nav-overlay
+    display flex
+    justify-content center
+    align-items center
+    position fixed
+    width 100%
+    height 100%
+    left 0 
+    right 0
+    bottom 0
+    background-color rgba(0, 0, 0, 0.8)
+    transform-origin right top
+    transform: scale(0)
+    transition 0.5s ease-in-out
+    overflow hidden
+
+    @media(min-width: 768px) 
+        position static
+        left auto
+        right auto
+        bottom auto
+        background-color transparent
+        transform none
+        overflow auto
+        transition none
+
+.locked
+    overflow hidden
+
+.header-nav-overlay--open
+    transform scale(1)
+    
+    .header-nav-list
+        display block
+
+.header-content
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    padding 54px 0 0 0
+
+    @media(min-width: 768px)
+        padding 136px 0 0 0
+
+.header-content-description
+    max-width 706px
+    text-align center
+    color #fff
+    font-size(22px)
+    font-weight 700
+    margin 0
+
+.header-content-slogan
+    font-size(22px)
+    font-weight bold
+    line-height 1
+    text-transform uppercase
+    color #ffffff
+
+    @media(min-width: 576px)
+        padding-left 43px
+
+.header-content-logo
+    width 130px
+    heigth auto 
+    margin 30px 0 45px 0
+
+    @media(min-width: 576px)
+        width auto
+    
+    @media(min-width: 768px)
+        margin 40px 0 76px 0
+
+.header-scroll
+    margin-top 80px
+    cursor pointer
+    border none
+    background-color transparent
+
+    &:focus
+        outline none
+
+    @media(min-width: 768px)
+        margin-top 130px

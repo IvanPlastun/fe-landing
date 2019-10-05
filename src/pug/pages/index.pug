@@ -1,6 +1,17 @@
 extends ../layouts/page-layout/page.pug
 block variables
-    - const title = 'Главная страница'
+    - const title = 'Fe'
 
 block content
-    include ../sections/tweet.pug
+    main(role="main")
+        include ../sections/header.pug
+        include ../sections/about.pug
+        include ../sections/skills.pug
+        include ../sections/team.pug
+        include ../sections/services.pug
+        include ../sections/facts.pug
+        include ../sections/work.pug
+        include ../sections/portfolio.pug
+        include ../sections/tweet.pug
+block scripts
+    script(src="js/main.js")
