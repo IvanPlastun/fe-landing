@@ -1,0 +1,94 @@
+.our-work
+    padding: 174px 0 0 0
+.our-work-top
+    display flex
+
+.our-work-top-lines
+    margin 0 31px 0 79px
+
+.our-work-top-description
+    max-width 539px
+    align-self flex-end
+    transform translateY(-30px)
+    line-height 1.25
+    color #666
+
+.our-work-works
+    display grid
+    grid-template-columns 7px repeat(2, 445px 38px) 445px 3px
+    grid-template-rows 445px 38px 445px 32px
+    margin-top 127px
+
+.our-work-works-preview
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    opacity 0.9
+
+    &:hover .our-work-works-preview__button
+        opacity 1
+
+.our-work-works-preview--work-1
+    grid-column 2 / 3
+    grid-row 1 / 2
+    background-image url(../img/works/ironRoad.png)
+
+.our-work-works-preview--work-2
+    grid-column 4 / 5
+    background-image url(../img/works/ballon.png)
+
+.our-work-works-preview--work-3
+    grid-column 6 / 7
+    background-image url(../img/works/bridge.png)
+
+.our-work-works-preview--work-4
+    grid-row 3 / 4
+    grid-column 2 / 5
+    background-image url(../img/works/clouds.png)
+
+.our-work-works-preview--work-5
+    grid-row 3 / 4
+    grid-column 6 / 7
+    background-image url(../img/works/plants.png)
+
+.our-work-works-preview__title
+    margin-bottom 31px
+    font-size(48px)
+    line-height 1
+    font-weight 300
+    color #333
+
+.our-work-works-preview__description
+    max-width 368px
+    margin-bottom 46px
+    font-size(24px)
+    text-align center
+    color #333
+
+.our-work-works-preview__button
+    border 4px solid #333
+    background-color transparent
+    font-size(30px)
+    line-height 1
+    text-align center
+    color #333
+    padding 12px 61.85px
+    opacity 0
+    transition all 0.5s ease
+    cursor pointer
+    transition 0.5s ease-in-out
+
+    &:hover
+        background-color rgba(0, 0, 0, 0.7)
+        color #fff
+
+    &:focus
+        outline none 
+
+// 7px repeat(2, \[colstart\] 445px \[colgutter\] 38px) \[col3start\] 445px \[col3end\] 3px
+// \[row1start\] 445px \[row1end\] 38px \[row2start\] 445px \[row2end\] 32px
+// .our-work-works-preview
+//     width 445px
+//     height 445px
+//     background-color #ccc
