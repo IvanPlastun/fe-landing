@@ -1,0 +1,19 @@
+mixin sectionTop(baseText, colorText, colorClassText, linesIndents, imgPath, altText, subtitleColorClass, descriptionStyle)
+    section&attributes(attributes)
+        h3.title-h3 #{baseText} #[span(class=colorClassText) #{colorText}]
+            if (subtitleColorClass)
+                span.title-h3__subtitle(class=subtitleColorClass) What we do with love
+            else
+                span.title-h3__subtitle What we do with love
+        if (altText)
+            img(class=linesIndents src=imgPath, alt=altText)
+        else
+            img(class=linesIndents src=imgPath)
+        if (descriptionStyle)
+            .section-top-description(class=descriptionStyle)
+                if (block)
+                    block
+        else
+            .section-top-description
+                if (block)
+                    block

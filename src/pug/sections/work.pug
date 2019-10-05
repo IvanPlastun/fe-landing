@@ -1,10 +1,7 @@
 section.our-work
     section.container
-        section.our-work-top
-            h3.title-h3 our #[span.title-h3--orange work] #[span.title-h3__subtitle What We Do With Love]
-            img.our-work-top-lines(src="img/svg/twoLines.svg" alt="lines")
-            .our-work-top-description
-                p Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse
+        +sectionTop("our", "work", "title-h3--orange", "our-work-top-lines", "img/svg/twoLines.svg", "lines", "", "our-work-top-description").our-work-top
+            p Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse
     section.our-work-works
         section.our-work-works-preview.our-work-works-preview--work-1
             p.our-work-works-preview__title Lorem ipsum

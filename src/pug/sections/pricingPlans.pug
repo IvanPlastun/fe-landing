@@ -1,9 +1,6 @@
 section.pricing-plans
     section.container
-        section.pricing-plans-top
-            h3.title-h3 plans & #[span.title-h3--orange pricing] #[span.title-h3__subtitle What We Do With Love]
-            img.pricing-plans-lines(src="../img/svg/twoLines.svg", alt="lines")
-            section.pricing-plans-top-description
-                p Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse
+        +sectionTop("plans &", "pricing", "title-h3--orange", "pricing-plans-lines", "img/svg/twoLines.svg", "lines", "", "pricing-plans-top-description").pricing-plans-top
+            p Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse
         section.pricing-plans-cards
             +pricingPlansCard(plans)
