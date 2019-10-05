@@ -19,4 +19,3 @@ function activeMenu () {
 }
 
 burgerMenu.addEventListener('click', activeMenu)
-
