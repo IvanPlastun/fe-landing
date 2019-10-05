@@ -1,12 +1,8 @@
 section.about
     .container
-        section.about-top
-            h3.title-h3.title-h3--settings About #[span.title-h3--orange us] #[span.title-h3__subtitle What we do with love]
-            .about-lines
-                img(src="img/svg/lines.svg", alt="lines")
-            .about-description
-                p Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse
-
+        +sectionTop("About", "us", "title-h3--orange", "about-lines", "img/svg/lines.svg", "lines", "", "about-description").about-top
+            p Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendiss
+        
         section.about-buttons
             button.about-buttons__button.about-buttons__button--active welcome
             button.about-buttons__button vision
@@ -16,7 +12,7 @@ section.about
         section.about-features
             .about-features-box
                 .about-features-box-icon
-                    i(class="far fa-lightbulb")
+                    i(class="fab fa-stumbleupon")
                 .about-features-box-description
                     h5.title-h5.title-h5--indents 100% Money Back
                     p aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.
