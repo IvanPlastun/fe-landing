@@ -2,7 +2,7 @@ section.portfolio
     section.container
         h4.title-h4.portfolio-title Additional Recent Work
         p.portfolio-subtitle Market-proven software with award winning design
-        div.portfolio-filter
+        section.portfolio-filter
             button.portfolio-filter__select-category.portfolio-filter__select-category--active All
             button.portfolio-filter__select-category Website
             button.portfolio-filter__select-category Graphic
@@ -10,5 +10,5 @@ section.portfolio
             button.portfolio-filter__select-category Mobile Apps
         section.portfolio-box
             +portfolioBoxItem(worksData)(class=workBoxPositionClasses)
-        .portfolio-button-wrapper
+        section.portfolio-button-wrapper
             button.portfolio-button-load Load more

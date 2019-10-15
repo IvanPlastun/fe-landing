@@ -18,6 +18,7 @@
 
 .about-description
     color #666
+    transform translateY(0)
 
     @media(min-width: 768px)
         transform translateY(-15px)
@@ -30,14 +31,14 @@
     align-self center
 
     @media(min-width: 768px)
-        margin 0 20px 0 49px
+        margin 0 20px 0 40px
         align-self flex-start
 
     @media(min-width: 992px)
-        margin 0 20px 0 79px
+        margin 0 30px 0 79px
 
 .about-buttons
-    margin-bottom 58px
+    margin-bottom 55px
 
     @media(min-width: 768px)
         margin-bottom 98px
@@ -93,14 +94,15 @@
 .about-features-box
     position relative
     display flex
+    align-items flex-end
     padding-top 25px
     padding-left 13px
 
+    &:first-child
+        padding-top 0
+
     @media(min-width: 992px)
-        padding-bottom 47px
-        padding-right 30px
-        padding-top 25px
-        padding-left 0
+        padding 25px 30px 47px 0
 
         &:first-child::after
             position absolute
@@ -134,7 +136,7 @@
 
         &:last-child::after
             position absolute
-            left 0
+            left -2px
             bottom 0
             content ''
             display block
@@ -155,7 +157,7 @@
     width 98px
     height 85px
     font-size(52px)
-    line-height 1.5
+    line-height 1
     text-align center
     color #ffffff
     background-color #eaeaea

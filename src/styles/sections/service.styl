@@ -1,120 +1,267 @@
 .service
-    padding: 117px 0 167px 0
+    padding: 40px 0 60px 0
+
+    @media (min-width 576px)
+        padding 60px 0 80px 0
+
+    @media (min-width 768px)
+        padding 90px 0 120px 0
+
+    @media (min-width 992px)
+        padding: 127px 0 167px 0
 
 .service-top
     display flex
+    flex-direction column
     margin-bottom 37px
 
+    @media (min-width 768px)
+        flex-direction row
+
 .service-top-lines
-    margin 0 31px 0 57px
+    margin 25px 0
+
+    @media (min-width: 768px)
+        margin 0 20px 0 40px
+
+    @media (min-width: 992px)
+        margin 0 31px 0 57px
 
 .service-top-description
     color #666
+
+    @media(min-width: 768px)
+        transform translateY(-15px)
+
+    @media(min-width: 992px)
+        transform translateY(-30px)
 
 .service-box
     display flex
     flex-flow row wrap
 
+    @media (min-width: 768px)
+        justify-content space-around
+
+    @media (min-width: 992px)
+        justify-content flex-start
+
 .service-box-item
     display flex
-    padding 30px 30px 48px 0
+    align-items center
+    padding 0 0 0 15px
+    margin 0 0 30px
     position relative
 
-    &:nth-child(2n)
-        padding-left 30px
+    &:last-child
+        margin 0
 
-    &:nth-child(2n-1)
-        padding-left 15px
+    @media (min-width: 768px)
+        padding 0
+        flex-direction column
 
-    &:nth-child(1)::before
-        position absolute
-        top 0
-        right 0
-        content ''
-        display block
-        height 164px
-        width 2px
-        background-color #eaeaea
+        &:nth-last-child(-n + 2)
+            margin 0
 
-    &:nth-child(1)::after
-        position absolute
-        left 0
-        bottom 0
-        content ''
-        display block
-        height 2px
-        width: 453px
-        background-color #eaeaea
+        &:nth-child(1)::before
+            position absolute
+            top 0px
+            right -30px
+            content ''
+            display block
+            height 200px
+            width 2px
+            background-color #eaeaea
 
-    &:nth-child(3)::before
-        position absolute
-        top 8px
-        right 0
-        content ''
-        display block
-        height 164px
-        width 2px
-        background-color #eaeaea
+        &:nth-child(1)::after
+            position absolute
+            left 0
+            bottom -15px
+            content ''
+            display block
+            height 2px
+            width: 303px
+            background-color #eaeaea
 
-    &:nth-child(5)::before
-        position absolute
-        top 8px
-        right 0
-        content ''
-        display block
-        height 164px
-        width 2px
-        background-color #eaeaea
+        &:nth-child(2)::after
+            position absolute
+            left -20px
+            bottom -15px
+            content ''
+            display block
+            height 2px
+            width: 305px
+            background-color #eaeaea
 
-    &:nth-child(3)::after
-        position absolute
-        left 0
-        bottom 0
-        content ''
-        display block
-        height 2px
-        width: 453px
-        background-color #eaeaea
-    
-    &:nth-child(2)::after
-        position absolute
-        left 10px
-        bottom 0
-        content ''
-        display block
-        height 2px
-        width: 465px
-        background-color #eaeaea
+        &:nth-child(3)::before
+            position absolute
+            top 0px
+            right -30px
+            content ''
+            display block
+            height 200px
+            width 2px
+            background-color #eaeaea
 
-    &:nth-child(4)::after
-        position absolute
-        left 10px
-        bottom 0
-        content ''
-        display block
-        height 2px
-        width: 465px
-        background-color #eaeaea
+        &:nth-child(3)::after
+            position absolute
+            left 0
+            bottom -15px
+            content ''
+            display block
+            height 2px
+            width: 303px
+            background-color #eaeaea
+
+        &:nth-child(5)::before
+            position absolute
+            top 0px
+            right -30px
+            content ''
+            display block
+            height 203px
+            width 2px
+            background-color #eaeaea
+
+        &:nth-child(4)::after
+            position absolute
+            left -20px
+            bottom -15px
+            content ''
+            display block
+            height 2px
+            width: 305px
+            background-color #eaeaea
+
+    @media (min-width 992px)
+        flex-direction row
+        align-items stretch
+        padding 30px 30px 40px 0
+        margin 0
+
+        &:nth-child(2n)
+            padding-left 30px
+
+        &:nth-child(2n-1)
+            padding-left 15px
+
+        &:nth-child(1)::before
+            position absolute
+            top 0
+            right 0
+            content ''
+            display block
+            height 164px
+            width 2px
+            background-color #eaeaea
+
+        &:nth-child(1)::after
+            position absolute
+            left 0
+            bottom 0
+            content ''
+            display block
+            height 2px
+            width: 450px
+            background-color #eaeaea
+
+        &:nth-child(3)::before
+            position absolute
+            top 8px
+            right 0
+            content ''
+            display block
+            height 155px
+            width 2px
+            background-color #eaeaea
+
+        &:nth-child(5)::before
+            position absolute
+            top 8px
+            right 0
+            content ''
+            display block
+            height 164px
+            width 2px
+            background-color #eaeaea
+
+        &:nth-child(3)::after
+            position absolute
+            left 0
+            bottom 0
+            content ''
+            display block
+            height 2px
+            width: 450px
+            background-color #eaeaea
+        
+        &:nth-child(2)::after
+            position absolute
+            left 10px
+            bottom 0
+            content ''
+            display block
+            height 2px
+            width: 465px
+            background-color #eaeaea
+
+        &:nth-child(4)::after
+            position absolute
+            left 10px
+            bottom 0
+            content ''
+            display block
+            height 2px
+            width: 465px
+            background-color #eaeaea
 
 .service-box-item-icon
     display flex
     justify-content center
     align-items center
-    width 107px
-    height 105px
+    flex-shrink 0
+    width 85px
+    height 85px
     background-color #00ccff
     transform skew(-15deg)
-    margin-right 30px
-    font-size(69px)
+    margin-right 20px
+    font-size(42px)
     line-height 1
     text-align center
     color #fff
 
+    @media (min-width: 576px)
+        width 107px
+        height 105px
+        margin-right 25px
+        font-size(69px)
+
+    @media (min-width: 768px)
+        margin-right 0
+        margin-bottom 10px
+
+    @media (min-width: 992px)
+        margin-right 25px
+        margin-bottom 0
+
 .service-box-item-description
     max-width 285px
     color #999
+    font-size(14px)
 
     &--title-styles
-        margin 9px 0 12px 0
+        margin 0 0 12px 0
         color #ff9900
 
+        @media (min-width: 576px)
+            margin 0px 0 12px 0
+
+    @media (min-width: 576px)
+        font-size(16px)
+
+    @media (min-width: 768px)
+        text-align center
+
+    @media (min-width: 992px)
+        padding 6px 0 0 0
+        text-align left
