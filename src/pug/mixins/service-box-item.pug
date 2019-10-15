@@ -2,9 +2,9 @@
 
 mixin serviceBoxItem(serviceInfo)
     for info in serviceInfo
-        .service-box-item
-            .service-box-item-icon
+        section.service-box-item
+            section.service-box-item-icon
                 i(class=info.iconclass)
-            .service-box-item-description
+            section.service-box-item-description
                 h5.title-h5.service-box-item-description--title-styles #{info.title}
                 p #{info.description}

@@ -28,13 +28,9 @@ body
 
 .section-top-description
     max-width 539px
-    transform translateY(-30px)
     line-height 1.25
     color #fff
     align-self flex-end
-
-.team-lines-indents
-    margin: 0 32px 0 79px
 
 .title-h3--settings
     text-align center
@@ -51,6 +47,7 @@ body
     font-weight 900
     color #00ccff
     text-transform uppercase
+    flex-shrink 0
 
 .title-h3__subtitle
     display block
@@ -69,10 +66,13 @@ body
     color #fff
 
 .title-h4
-    font-size(24px)
+    font-size(20px)
     font-weight 900
     text-align center
     color #666
+
+    @media (min-width: 768px)
+        font-size(24px)
 
 .title-h5
     font-size(16px)
@@ -86,4 +86,4 @@ body
     margin-bottom 10px
 
     @media(min-width: 576px)
-        margin-bottom 15px
+        margin-bottom 13px
