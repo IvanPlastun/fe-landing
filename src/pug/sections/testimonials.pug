@@ -1,8 +1,8 @@
-section.testimonials
-    section.container
+.testimonials
+    .container
         +sectionTop("Our", "testimonial", "title-h3--orange", "testimonials-top-lines", "img/svg/twoLines.svg", "lines", "", "testimonials-top-description").testimonials-top
             p.testimonials-top-description Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse
-        section.testimonials-technologies
+        .testimonials-technologies
             a(href="#!")
                 img(src="../img/technologies/sass.png", alt="sass")
             a(href="#!")
@@ -13,12 +13,13 @@ section.testimonials
                 img(src="../img/technologies/bootstrap.png", alt="bootstrap")
             a(href="#!")
                 img(src="../img/technologies/jquery.png", alt="jQuery")
-        section.testimonials-clients
+        .testimonials-clients.owl-carousel
             +testimonialsClientBox(testimonalsCliensData)
             +testimonialsClientBox(testimonalsCliensData)
             +testimonialsClientBox(testimonalsCliensData)
-        section.testimonials-dots
-            button.testimonials-dots__dot
-            button.testimonials-dots__dot.testimonials-dots__dot--active
-            button.testimonials-dots__dot
-            button.testimonials-dots__dot
+            +testimonialsClientBox(testimonalsCliensData)
+            +testimonialsClientBox(testimonalsCliensData)
+            +testimonialsClientBox(testimonalsCliensData)
+            +testimonialsClientBox(testimonalsCliensData)
+            +testimonialsClientBox(testimonalsCliensData)
+            +testimonialsClientBox(testimonalsCliensData)

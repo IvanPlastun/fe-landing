@@ -1,14 +1,14 @@
-section.portfolio
-    section.container
+.portfolio
+    .container
         h4.title-h4.portfolio-title Additional Recent Work
         p.portfolio-subtitle Market-proven software with award winning design
-        section.portfolio-filter
-            button.portfolio-filter__select-category.portfolio-filter__select-category--active All
-            button.portfolio-filter__select-category Website
-            button.portfolio-filter__select-category Graphic
-            button.portfolio-filter__select-category Identity
-            button.portfolio-filter__select-category Mobile Apps
-        section.portfolio-box
+        .portfolio-filter
+            button(data-select-category="all").portfolio-filter__select-category.active All
+            button(data-select-category="website").portfolio-filter__select-category Website
+            button(data-select-category="graphic").portfolio-filter__select-category Graphic
+            button(data-select-category="identity").portfolio-filter__select-category Identity
+            button(data-select-category="mobile apps").portfolio-filter__select-category Mobile Apps
+        .portfolio-box
             +portfolioBoxItem(worksData)(class=workBoxPositionClasses)
-        section.portfolio-button-wrapper
+        .portfolio-button-wrapper
             button.portfolio-button-load Load more

@@ -2,8 +2,8 @@
 
 mixin skillIndicator(indicatorConfig)
     for indicator in indicatorConfig
-        section.skills-indicators-indicator
-            section.skills-indicators-indicator-wrapper
+        .skills-indicators-indicator
+            .skills-indicators-indicator-wrapper
                 svg.skills-indicators-indicator-svg-box(viewBox="0 0 200 200")
                     circle.skills-indicators-indicator-svg-box__circle-outer(cx=indicator.cx cy=indicator.cy r=indicator.r)
                     circle.skills-indicators-indicator-svg-box__circle-inner(cx=indicator.cx cy=indicator.cy r=indicator.r stroke-dashoffset=indicator.indicatorValue)
