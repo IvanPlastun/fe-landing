@@ -2,10 +2,10 @@
 
 mixin teamBoxItem(infoTeam)
     each info in infoTeam
-        section.team-box-item
-            section.team-box-item-img
+        .team-box-item
+            .team-box-item-img
                 img(src=info.imgSrc, alt=info.altText)
-                section.text-box-item-img-hover-social
+                .text-box-item-img-hover-social
                     a.text-box-item-img-hover-social__link(href=info.socialNetworks.facebook) #[i(class="fab fa-facebook-f")]
                     a.text-box-item-img-hover-social__link(href=info.socialNetworks.twitter) #[i(class="fab fa-twitter")]
                     a.text-box-item-img-hover-social__link(href=info.socialNetworks.linkedin) #[i(class="fab fa-linkedin-in")]
