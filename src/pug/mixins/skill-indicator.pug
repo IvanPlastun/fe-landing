@@ -1,0 +1,12 @@
+- const indicators = [{cx: 100, cy: 100, r: 91.25, indicatorText: "58%", indicatorValue: 240.80, title: "wordpress", content: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis."}, {cx: 100, cy: 100, r: 91.25, indicatorText: "75%", indicatorValue: 143.33,title: "html 5", content: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis."}, {cx: 100, cy: 100, r: 91.25, indicatorText: "80%", indicatorValue: 114.66, title: "css 3", content: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra velvarius eget sit mollis."}, {cx: 100, cy: 100, r: 91.25, indicatorText: "95%", indicatorValue: 28.66, title: "photoshop", content: "aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverravel varius eget sit mollis."}]
+
+mixin skillIndicator(indicatorConfig)
+    for indicator in indicatorConfig
+        .skills-indicators-indicator
+            .skills-indicators-indicator-wrapper
+                svg.skills-indicators-indicator-svg-box(viewBox="0 0 200 200")
+                    circle.skills-indicators-indicator-svg-box__circle-outer(cx=indicator.cx cy=indicator.cy r=indicator.r)
+                    circle.skills-indicators-indicator-svg-box__circle-inner(cx=indicator.cx cy=indicator.cy r=indicator.r stroke-dashoffset=indicator.indicatorValue)
+                span #{indicator.indicatorText}
+            h5.title-h5.skills-indicators-indicator--additional-styles #{indicator.title}
+            p #{indicator.content}

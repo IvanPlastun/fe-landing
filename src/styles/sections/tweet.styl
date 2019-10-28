@@ -1,0 +1,86 @@
+.tweet
+    background-color #333
+    background-image url(../img/background/teambg.png)
+    background-size cover
+
+.tweet-triangle-top
+    margin-bottom 47px
+    transform translateY(-1px)
+
+    @media (min-width: 768px)
+        margin-bottom 67px
+
+.tweet-triangle-bottom
+    transform translateY(1px)
+
+    @media (min-width: 992px)
+        transform translateY(2px)
+
+.tweet-slider
+    display flex
+    justify-content center
+
+.tweet-slider-slide
+    max-width 795px
+    padding 0 5px
+    text-align center
+    margin: 0 auto
+
+.tweet-slider-slide__icon
+    display inline-block
+    margin-bottom 75px
+    font-size(100px)
+    line-height 1
+    color #0cf
+
+.tweet-slider-slide__text
+    font-size(18px)
+    line-height normal
+    text-align center
+    color #ffffff
+
+.tweet-slider-points
+    display flex
+    justify-content center
+    margin-bottom 25px
+    margin-top 74px
+
+    @media (min-width: 768px)
+        margin-top: 94px
+
+.tweet-slider-dot
+    width 11px
+    height 11px
+    border none 
+    margin-right 5px
+    border-radius 50%
+    background-color #ccc
+    cursor pointer
+    transition 0.3s ease-in
+
+    &:hover
+        background-color #999
+
+    &:focus
+        outline none 
+
+    &:last-child
+        margin-right 0
+
+.tweet-slider-dot.active
+    background-color #999
+
+.tweet-follow
+    margin-bottom 43px
+    font-size(22px)
+    line-height 1.2
+    text-align center
+    color #fff
+
+.tweet-follow__link
+    text-decoration none
+    color #0cf
+    transition 0.3s ease-in-out
+
+    &:hover
+        color #00b0dc

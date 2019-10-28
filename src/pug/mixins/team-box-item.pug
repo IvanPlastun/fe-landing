@@ -1,0 +1,15 @@
+- const teamInfo = [{imgSrc: "img/team/human-1.jpg",altText: "Patricia medina",name: "Patricia medina", post: "Senior Designer", description: "Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in.", socialNetworks: {facebook: "#!", twitter: "#!", linkedin: "#!",behance: "#!"}}, {imgSrc: "img/team/human-2.jpg",altText: "Patricia medina",name: "Patricia medina", post: "Senior Designer", description: "Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in.", socialNetworks: {facebook: "#!", twitter: "#!", linkedin: "#!",behance: "#!"}}, {imgSrc: "img/team/human-3.jpg",altText: "Patricia medina",name: "Patricia medina", post: "Senior Designer", description: "Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in.", socialNetworks: {facebook: "#!", twitter: "#!", linkedin: "#!",behance: "#!"}}, {imgSrc: "img/team/human-4.jpg",altText: "Patricia medina",name: "Patricia medina", post: "Senior Designer", description: "Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in.", socialNetworks: {facebook: "#!", twitter: "#!", linkedin: "#!",behance: "#!"}}]
+
+mixin teamBoxItem(infoTeam)
+    each info in infoTeam
+        .team-box-item
+            .team-box-item-img
+                img(src=info.imgSrc, alt=info.altText)
+                .text-box-item-img-hover-social
+                    a.text-box-item-img-hover-social__link(href=info.socialNetworks.facebook) #[i(class="fab fa-facebook-f")]
+                    a.text-box-item-img-hover-social__link(href=info.socialNetworks.twitter) #[i(class="fab fa-twitter")]
+                    a.text-box-item-img-hover-social__link(href=info.socialNetworks.linkedin) #[i(class="fab fa-linkedin-in")]
+                    a.text-box-item-img-hover-social__link(href=info.socialNetworks.behance) #[i(class="fab fa-behance")]
+            span.team-box-item__name #{info.name}
+            span.team-box-item__post #{info.post}
+            p #{info.description}

@@ -1,0 +1,139 @@
+.team
+    background-color #333
+    background-image url(../img/background/teambg.png)
+    background-size cover
+
+.team-triangle-top
+    transform translateY(-2px)
+
+.team-top
+    display flex
+    flex-direction column
+    margin 30px 0 60px 0
+
+    @media(min-width: 768px)
+        flex-direction row
+
+    @media(min-width: 992px)
+        margin 70px 0 99px 0
+
+.team-lines
+    margin 25px 0
+
+    @media(min-width: 768px)
+        margin 0 20px 0 40px
+
+    @media(min-width: 992px)
+        margin 0 30px 0 79px
+
+.team-description
+    @media(min-width: 768px)
+        transform translateY(-15px)
+
+    @media(min-width: 992px)
+        transform translateY(-30px)
+
+.team-box
+    display flex
+    flex-direction column
+    align-items center
+
+    @media (min-width: 576px)
+        flex-flow row wrap
+        justify-content space-around
+
+.team-box-item
+    width 200px
+    display flex
+    flex-direction column
+    align-items center
+    margin-bottom 30px
+
+    &:last-child
+        margin-bottom 0px
+
+    @media (min-width: 576px)
+        
+        &:nth-last-child(-n + 2)
+            margin-bottom 0px
+
+    @media (min-width: 768px)
+        width 300px
+
+    @media (min-width: 992px)
+        width 200px
+        margin 0
+
+    p
+        line-height normal
+        font-size(12px)
+        color #fff
+
+.team-box-item-img
+    position relative
+    width 178px
+    height 178px
+    background-color #fff
+    border-radius 50%
+    overflow hidden
+    margin-bottom 32px
+    cursor pointer
+
+    img 
+        width 100%
+        height auto
+
+    &:hover .text-box-item-img-hover-social
+        transform rotate(0deg)
+
+.text-box-item-img-hover-social
+    display flex
+    justify-content center
+    align-items center
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    border-radius 45%
+    background-color #000
+    transform-origin right top
+    transform rotate(90deg)
+    transition 0.5s ease-in-out
+
+.text-box-item-img-hover-social__link
+    font-size(18px)
+    line-height 1
+    color #b1afad
+    margin-right 20px
+    transition 0.5s ease-in
+
+    &:hover
+        color #00ccff
+
+    &:last-child
+        margin-right 0
+
+.team-box-item__name
+    display block
+    margin-bottom 5px
+    font-size(20px)
+    font-weight bold
+    line-height 1
+    text-transform uppercase
+    color #fff
+
+.team-box-item__post
+    display block
+    font-size(12px)
+    line-height 1
+    text-align center
+    color #00ccff
+    margin-bottom 14px
+
+.team-triangle-bottom
+    margin 80px 0 0 0
+    transform translateY(2px)
+
+    @media (min-width: 992px)
+        margin 117px 0 0 0

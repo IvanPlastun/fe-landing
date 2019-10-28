@@ -16,11 +16,9 @@ body
 
     @media(min-width: 576px) 
         max-width 540px
-        // padding 0
 
     @media(min-width: 768px)
         max-width 720px
-        // padding 0
 
     @media(min-width: 992px)
         max-width 960px
@@ -28,19 +26,11 @@ body
         padding-right 0
 
 
-.title-h5
-    font-size(16px)
-    font-weight bold
-    color #333
-
-    @media(min-width: 576px)
-        font-size(20px)
-
-.title-h5--indents
-    margin-bottom 10px
-
-    @media(min-width: 576px)
-        margin-bottom 15px
+.section-top-description
+    max-width 539px
+    line-height 1.25
+    color #fff
+    align-self flex-end
 
 .title-h3--settings
     text-align center
@@ -57,6 +47,7 @@ body
     font-weight 900
     color #00ccff
     text-transform uppercase
+    flex-shrink 0
 
 .title-h3__subtitle
     display block
@@ -65,5 +56,34 @@ body
     font-weight normal
     text-transform capitalize
 
+    &--white
+        color #fff
+
 .title-h3--orange
     color #ff9900
+
+.title-h3--white
+    color #fff
+
+.title-h4
+    font-size(20px)
+    font-weight 900
+    text-align center
+    color #666
+
+    @media (min-width: 768px)
+        font-size(24px)
+
+.title-h5
+    font-size(16px)
+    font-weight bold
+    color #333
+
+    @media(min-width: 576px)
+        font-size(20px)
+
+.title-h5--indents
+    margin-bottom 10px
+
+    @media(min-width: 576px)
+        margin-bottom 13px

@@ -1,0 +1,169 @@
+.our-work
+    padding: 40px 0 0 0
+
+    @media (min-width: 992px)
+        padding: 174px 0 0 0
+
+.our-work-top
+    display flex
+    flex-direction column
+
+    @media (min-width: 768px)
+        flex-direction row
+
+.our-work-top-lines
+    margin 25px 0
+
+    @media (min-width: 768px)
+        margin 0 20px 0 40px
+
+    @media (min-width: 992px)
+        margin 0 31px 0 79px    
+
+.our-work-top-description
+    max-width 539px
+    align-self flex-end
+    line-height 1.25
+    color #666
+
+    @media(min-width: 768px)
+        transform translateY(-15px)
+
+    @media(min-width: 992px)
+        transform translateY(-30px)
+
+.our-work-works
+    display grid
+    grid-template-columns 1fr
+    grid-row-gap 30px
+    margin-top 80px
+    padding: 0 5px 30px 5px
+
+    @media (min-width: 768px)
+        grid-template-columns 5px 1fr 30px 1fr 5px
+        padding 0 0 30px 0
+
+    @media (min-width: 992px)
+        margin-top 127px
+        padding 0
+
+    @media (min-width: 1200px)
+        grid-template-columns 7px repeat(2, 1fr 30px) 1fr 3px
+        grid-template-rows 483px 38px 483px 32px
+        grid-row-gap 0
+
+.our-work-works-preview
+    height 350px
+
+    &:hover .our-work-works-preview__button
+        opacity 1
+
+    @media (min-width: 992px)
+        height 470px
+
+    @media (min-width: 1200px)
+        height 100%
+
+.our-work-works-preview-overlay
+    width 100%
+    height 100%
+    padding 0 10px;
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    background-color rgba(255, 255, 255, 0.2)
+
+.our-work-works-preview--work-1
+    background-image url(../img/works/ironRoad.png)
+    background-size cover
+
+.our-work-works-preview--work-2
+    background-image url(../img/works/ballon.png)
+    background-size cover
+
+.our-work-works-preview--work-3
+    background-image url(../img/works/bridge.png)
+    background-size cover
+
+.our-work-works-preview--work-4
+    background-image url(../img/works/clouds.png)
+    background-size cover
+
+.our-work-works-preview--work-5
+    background-image url(../img/works/plants.png)
+    background-size cover
+
+@media (min-width: 768px)
+    .our-work-works-preview--work-1
+        grid-column 2 / 3
+
+    .our-work-works-preview--work-2
+        grid-column 4 / 5
+
+    .our-work-works-preview--work-3
+        grid-column 2 / 3
+
+    .our-work-works-preview--work-4
+        grid-column 2 / 5
+        grid-row 2 / 3
+
+    .our-work-works-preview--work-5
+        grid-column 4 / 5
+
+@media (min-width: 1200px)
+    .our-work-works-preview--work-1
+        grid-column 2 / 3
+        grid-row 1 / 2
+
+    .our-work-works-preview--work-2
+        grid-column 4 / 5
+
+    .our-work-works-preview--work-3
+        grid-column 6 / 7
+
+    .our-work-works-preview--work-4
+        grid-row 3 / 4
+        grid-column 2 / 5
+
+    .our-work-works-preview--work-5
+        grid-row 3 / 4
+        grid-column 6 / 7
+
+.our-work-works-preview__title
+    margin-bottom 31px
+    font-size(48px)
+    line-height 1
+    font-weight 300
+    color #333
+
+.our-work-works-preview__description
+    max-width 368px
+    margin-bottom 46px
+    font-size(24px)
+    text-align center
+    color #333
+
+.our-work-works-preview__button
+    padding 10px 30px
+    border 4px solid #333
+    background-color transparent
+    text-decoration none
+    font-size(26px)
+    line-height 1
+    text-align center
+    color #333
+    opacity 0
+    cursor pointer
+    transition 0.3s ease-in-out
+
+    @media (min-width: 992px)
+        font-size(30px)
+        padding 12px 61.85px
+
+    &:hover
+        background-color rgba(0, 0, 0, 0.7)
+        color #fff
+
+    &:focus
+        outline none

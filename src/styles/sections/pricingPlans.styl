@@ -1,0 +1,135 @@
+.pricing-plans
+    padding: 40px 0 60px 0 
+    background-color #f7f7f7
+
+    @media (min-width: 768px)
+        padding: 90px 0 100px 0 
+
+    @media (min-width: 992px)
+        padding: 198px 0 142px 0 
+
+.pricing-plans-top
+    display flex
+    flex-direction column
+    margin 0 0 60px 0
+
+    @media (min-width: 768px)
+        flex-direction row
+        margin 0 0 90px 0
+
+    @media (min-width: 992px)
+        margin 0 0 137px 0
+
+.pricing-plans-lines
+    margin 25px 0
+
+    @media (min-width: 768px)
+        margin 0 31px 0 14px
+
+.pricing-plans-top-description
+    color #666
+
+    @media(min-width: 768px)
+        transform translateY(-15px)
+
+    @media(min-width: 992px)
+        transform translateY(-30px)
+
+.pricing-plans-cards
+    display flex
+    flex-direction column
+    align-items center
+
+    @media (min-width: 576px)
+        flex-direction row
+        flex-wrap wrap
+        justify-content space-between
+        align-items stretch
+
+.pricing-plans-cards-card
+    width 220px
+    margin-bottom 30px
+    text-align center
+
+    &:last-child
+        margin-bottom 0
+
+    @media (min-width: 576px)
+        &:nth-last-child(-n + 2)
+            margin-bottom 0
+
+    @media (min-width: 768px)
+        width 320px
+
+    @media (min-width: 992px)
+        width 220px
+        margin-bottom 0
+
+.pricing-plans-cards-card__plan
+    display flex
+    justify-content center
+    align-items center
+    width 100%
+    height 82px
+    margin 0 0 50px 0
+    border 1px solid #ccc
+    background-color #0cf
+    font-size(22px)
+    font-weight bold
+    text-align center
+    color #fff
+
+.pricing-plans-cards-card__price
+    font-size(60px)
+    line-height 1
+    font-weight bold
+    color #333
+    margin 0 0 48px 0
+
+    &--symbol-size
+        font-size(36px)
+
+    &--text-style
+        font-size(24px)
+        font-weight normal
+
+.pricing-plans-cards-card-plan-info
+    font-size(14px)
+    line-height 1
+    color #333
+    margin 0 0 57px 0
+
+    p
+        margin 0 0 26px 0
+        &:last-child
+            margin 0 
+
+.pricing-plans-cards-card__order-button
+    display inline-block
+    width 121px
+    height 38px
+    line-height 38px
+    border 1px solid #333
+    margin 0 0 25px 0
+    background-color transparent
+    font-size(11px)
+    font-weight bold
+    text-align center
+    text-transform uppercase
+    text-decoration none
+    color #333
+    cursor pointer
+    transition 0.5s ease-in-out
+
+    &:focus
+        outline none 
+
+    &:hover
+        background-color #333
+        color #fff
+
+.pricing-plans-cards-card__trial-preriod
+    font-size(11px)
+    line-height 1
+    text-transform uppercase
+    color #999
