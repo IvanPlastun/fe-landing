@@ -46,8 +46,8 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-zopfli": "^6.0.0",
-    "webpack": "^4.39.3",
-    "webpack-stream": "^5.2.1",
+    "webpack": "^5.94.0",
+    "webpack-stream": "^7.0.0",
     "yargs": "^14.0.0"
   }
 }
